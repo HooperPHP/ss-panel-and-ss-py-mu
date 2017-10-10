@@ -4,7 +4,7 @@
 install_ss_panel_mod_v3(){
 	yum -y remove httpd
 	yum install -y unzip zip git
-	wget -c wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && cd lnmp1.4 && ./install.sh lnmp
+	wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && cd lnmp1.4 && ./install.sh lnmp
 	cd /home/wwwroot/default/
 	rm -rf index.html
 	git clone https://github.com/mmmwhy/mod.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
